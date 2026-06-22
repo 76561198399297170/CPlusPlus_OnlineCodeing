@@ -1,0 +1,39 @@
+﻿{
+  "create": {
+    "create-generate-title": "只修改标题字段，生成合法非空的中文标题。不要修改其他任何字段，保持所有字段完全不变。",
+    "create-generate-description": "只修改题目描述字段，根据标题生成完整中文题目描述。不要修改其他任何字段，保持完全不变。",
+    "create-generate-test-cases": "只修改测试用例字段，生成3–4组合法中文测试用例。不要修改其他任何字段，保持完全不变。",
+    "create-evaluate-difficulty": "只修改难度字段，设置1–5之间的合法数字。不要修改其他任何字段，保持完全不变。",
+    "create-add-tags": "只修改标签字段，生成3–5个中文算法标签。不要修改其他任何字段，保持完全不变。",
+    "create-complete-problem": "你是专业的编程算法出题人。请补齐所有空字段，只生成正常的中文编程题目内容，保持标题和已有内容不变。必须使用纯中文，禁止使用英文。生成题目描述、输入要求、输出要求、测试用例、标签。不要解释JSON，不要输出格式说明，只生成正常题目。",
+    "create-pre-check": "只修正语法、错别字、语句通顺度。保持所有字段内容不变。"
+  },
+  "review": {
+    "review-check-completeness": "只返回success(bool)和message中文结果。检查题目是否完整。不要修改其他任何字段，保持完全不变。",
+    "review-plagiarism-check": "只返回success(bool)和message中文结果。检查是否原创。不要修改其他任何字段，保持完全不变。",
+    "review-difficulty-review": "只评估难度是否合理，可修改难度。返回success和message。不要修改其他字段。",
+    "review-generate-review": "只返回success(bool)和message中文审核意见。不要修改其他任何字段，保持完全不变。",
+    "review-validate-test-cases": "只返回success(bool)和message中文结果。检查测试用例是否合法。不要修改其他任何字段。",
+    "review-language-check": "只返回success(bool)和message中文结果。检查语言是否规范。不要修改其他任何字段。"
+  },
+
+  "desc": {
+    "comment": "上面提示词适用于小模型，防止输出较长发生截断",
+    "create": {
+      "create-generate-title": "generate a clear, concise, and professional title for the algorithm question. keep all other fields unchanged. output only valid json, no extra text.",
+      "create-generate-description": "generate a complete, accurate, clear problem description including requirements and constraints. keep other fields unchanged. output only valid json.",
+      "create-generate-test-cases": "generate 3-5 valid test cases (normal + edge cases) in input-output pairs. keep other fields. output only valid json.",
+      "create-optimize-difficulty": "set a reasonable difficulty (1-5) for the question. keep other fields. output only valid json.",
+      "create-check-grammar": "check and correct grammar, logic, and expression errors. keep all fields and structure. output only valid json.",
+      "create-add-tags": "add 3-5 accurate, standard, industry-recognized algorithm tags. keep all other fields. output only valid json."
+    },
+    "review": {
+      "review-check-completeness": "check if the question is complete (title, description, input, output, constraints, test cases). keep fields. output only valid json.",
+      "review-plagiarism-check": "check if the question is original and not plagiarized. keep fields. output result in valid json.",
+      "review-difficulty-review": "check if difficulty is reasonable and consistent. keep fields. output only valid json.",
+      "review-generate-review": "generate a comprehensive, objective review. keep fields. output only valid json.",
+      "review-validate-test-cases": "validate test cases for correctness and coverage. keep fields. output only valid json.",
+      "review-language-check": "optimize language to be formal, clear, unambiguous. keep all fields. output only valid json."
+    }
+  }
+}

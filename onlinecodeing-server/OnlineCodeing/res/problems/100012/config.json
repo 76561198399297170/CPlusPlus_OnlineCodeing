@@ -1,0 +1,26 @@
+﻿{
+  "difficulty": 1,
+  "memory_limit": {
+    "c": 256,
+    "cpp": 256,
+    "go": 256,
+    "java": 256,
+    "javascript": 256,
+    "pypy3": 256,
+    "python3": 256
+  },
+  "tags": [
+    "算法",
+    "编程题",
+    "数据结构"
+  ],
+  "time_limit": {
+    "c": 1000,
+    "cpp": 1000,
+    "go": 3000,
+    "java": 3000,
+    "javascript": 3000,
+    "pypy3": 3000,
+    "python3": 3000
+  }
+}

@@ -1,0 +1,43 @@
+// src/assets/styles/variables.scss
+// 主题色（科技蓝为主色调，适配编程网站风格）
+$primary-color: #165DFF;       // 主色调-科技蓝
+$primary-light: #4080FF;      // 主色调浅色
+$primary-dark: #0E42C5;       // 主色调深色
+$success-color: #00B42A;      // 成功色-绿色
+$warning-color: #FF7D00;      // 警告色-橙色
+$danger-color: #F53F3F;       // 危险色-红色
+$text-color: #1D2129;         // 主要文字色
+$text-secondary: #4E5969;     // 次要文字色
+$text-placeholder: #86909C;   // 占位文字色
+$bg-color: #F7F8FA;           // 页面背景色
+$bg-card: #FFFFFF;            // 卡片背景色
+$border-color: #E5E6EB;       // 边框色
+$border-hover: #C9CDD4;       // 边框hover色
+
+// 尺寸变量
+$header-height: 60px;         // 顶部导航高度
+$footer-height: 80px;         // 底部高度
+$container-width: 1200px;     // 页面容器宽度
+$card-radius: 8px;            // 卡片圆角
+$btn-radius: 6px;             // 按钮圆角
+$input-radius: 6px;           // 输入框圆角
+
+// 字体变量
+$font-main: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+// 阴影变量
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+// 过渡动画
+$transition-base: all 0.3s ease;
+$transition-fast: all 0.2s ease;

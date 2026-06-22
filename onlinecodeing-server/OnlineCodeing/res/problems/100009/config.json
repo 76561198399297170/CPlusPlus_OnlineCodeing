@@ -1,0 +1,25 @@
+﻿{
+  "difficulty": 1,
+  "memory_limit": {
+    "c": 521,
+    "cpp": 521,
+    "go": 521,
+    "java": 521,
+    "javascript": 521,
+    "pypy3": 521,
+    "python3": 521
+  },
+  "tags": [
+    "数学",
+    "模拟"
+  ],
+  "time_limit": {
+    "c": 1000,
+    "cpp": 1000,
+    "go": 1000,
+    "java": 1000,
+    "javascript": 1000,
+    "pypy3": 1000,
+    "python3": 1000
+  }
+}

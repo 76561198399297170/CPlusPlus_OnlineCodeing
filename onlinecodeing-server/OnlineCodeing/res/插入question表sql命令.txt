@@ -1,0 +1,18 @@
+-- 插入question题目
+INSERT INTO `question` (`question_id`, `question_name`, `difficulty`, `tags`) 
+VALUES
+(
+    100000, 
+    '对联【算法赛】', 
+    3, 
+    '["算法", "字符串", "贪心"]'
+);
+
+-- 查询包含"算法"标签的题目
+SELECT * FROM `question` WHERE JSON_CONTAINS(`tags`, '"算法"');
+
+-- 查询同时包含"算法"和"字符串"标签的题目
+SELECT * FROM `question` WHERE JSON_CONTAINS(`tags`, '"算法"') AND JSON_CONTAINS(`tags`, '"字符串"');
+
+-- 查询包含"算法"或"动态规划"标签的题目
+SELECT * FROM `question` WHERE JSON_CONTAINS(`tags`, '"算法"') OR JSON_CONTAINS(`tags`, '"动态规划"');

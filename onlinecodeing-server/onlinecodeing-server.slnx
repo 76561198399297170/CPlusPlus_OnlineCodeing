@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="OnlineCodeing/OnlineCodeing.vcxproj" Id="37ef6505-6557-4633-8ceb-41fe1b457e5b" />
+</Solution>

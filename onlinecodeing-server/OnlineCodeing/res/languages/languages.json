@@ -1,0 +1,268 @@
+{
+  "languages": [
+    {
+      "type": "C",
+      "name": "c",
+      "file_extension": "c",
+      "compile_cmd": "g++ -o \"{output}\" \"{input}\" -O2",
+      "run_cmd": "\"{output}\"",
+      "need_compile": true,
+      "enabled": true,
+      "dangerous_functions": [
+        "system(",
+        "exec(",
+        "fork(",
+        "popen(",
+        "CreateProcess",
+        "WinExec",
+        "ShellExecute",
+        "LoadLibrary",
+        "GetProcAddress",
+        "fopen(",
+        "fopen_s(",
+        "freopen(",
+        "freopen_s(",
+        "open(",
+        "creat(",
+        "mkdir(",
+        "rmdir(",
+        "remove("
+      ],
+      "dangerous_modules": [
+        "<windows.h>",
+        "<sys/socket.h>",
+        "<sys/types.h>",
+        "<sys/stat.h>",
+        "<fcntl.h>",
+        "<unistd.h>",
+        "<process.h>",
+        "<io.h>",
+        "<direct.h>",
+        "<shlobj.h>",
+        "<winbase.h>"
+      ]
+    },
+    {
+      "type": "CPP",
+      "name": "c++",
+      "file_extension": "cpp",
+      "compile_cmd": "g++ -o \"{output}\" \"{input}\" -O2 -std=c++17",
+      "run_cmd": "\"{output}\"",
+      "need_compile": true,
+      "enabled": true,
+      "dangerous_functions": [
+        "system(",
+        "exec(",
+        "fork(",
+        "popen(",
+        "CreateProcess",
+        "WinExec",
+        "ShellExecute",
+        "LoadLibrary",
+        "GetProcAddress",
+        "fopen(",
+        "fopen_s(",
+        "freopen(",
+        "freopen_s(",
+        "open(",
+        "creat(",
+        "mkdir(",
+        "rmdir(",
+        "remove("
+      ],
+      "dangerous_modules": [
+        "<windows.h>",
+        "<sys/socket.h>",
+        "<sys/types.h>",
+        "<sys/stat.h>",
+        "<fcntl.h>",
+        "<unistd.h>",
+        "<process.h>",
+        "<io.h>",
+        "<direct.h>",
+        "<shlobj.h>",
+        "<winbase.h>",
+        "fstream",
+        "ifstream",
+        "ofstream"
+      ]
+    },
+    {
+      "type": "PYTHON3",
+      "name": "python3",
+      "file_extension": "py",
+      "compile_cmd": "",
+      "run_cmd": "py -u \"{input}\"",
+      "need_compile": false,
+      "enabled": true,
+      "dangerous_functions": [
+        "eval(",
+        "exec(",
+        "compile(",
+        "open(",
+        "file(",
+        "__import__(",
+        "raw_input("
+      ],
+      "dangerous_modules": [
+        "os",
+        "subprocess",
+        "sys",
+        "shutil",
+        "tempfile",
+        "ctypes",
+        "winreg",
+        "socket",
+        "threading",
+        "multiprocessing"
+      ]
+    },
+    {
+      "type": "JAVA",
+      "name": "java",
+      "file_extension": "java",
+      "compile_cmd": "javac \"{input}\"",
+      "run_cmd": "java Main",
+      "need_compile": true,
+      "enabled": false,
+      "dangerous_functions": [
+        "Runtime.getRuntime().exec(",
+        "ProcessBuilder",
+        "System.exit("
+      ],
+      "dangerous_modules": [
+        "java.io",
+        "java.nio",
+        "java.net",
+        "java.lang.Process",
+        "java.lang.Runtime"
+      ]
+    },
+    {
+      "type": "GO",
+      "name": "go",
+      "file_extension": "go",
+      "compile_cmd": "go build -o \"{output}\" \"{input}\"",
+      "run_cmd": "\"{output}\"",
+      "need_compile": true,
+      "enabled": false,
+      "dangerous_functions": [
+        "os/exec.Command(",
+        "os.Exit(",
+        "os.Remove(",
+        "os.Rename("
+      ],
+      "dangerous_modules": [
+        "os/exec",
+        "net",
+        "os",
+        "syscall"
+      ]
+    },
+    {
+      "type": "JAVASCRIPT",
+      "name": "javascript",
+      "file_extension": "js",
+      "compile_cmd": "",
+      "run_cmd": "node \"{input}\"",
+      "need_compile": false,
+      "enabled": false,
+      "dangerous_functions": [
+        "eval(",
+        "Function(",
+        "exec(",
+        "spawn("
+      ],
+      "dangerous_modules": [
+        "child_process",
+        "fs",
+        "net",
+        "http"
+      ]
+    },
+    {
+      "type": "RUST",
+      "name": "rust",
+      "file_extension": "rs",
+      "compile_cmd": "rustc \"{input}\" -o \"{output}\"",
+      "run_cmd": "\"{output}\"",
+      "need_compile": true,
+      "enabled": false,
+      "dangerous_functions": [
+        "std::process::Command",
+        "std::fs::remove_file",
+        "std::fs::remove_dir"
+      ],
+      "dangerous_modules": [
+        "std::process",
+        "std::fs",
+        "std::net"
+      ]
+    },
+    {
+      "type": "KOTLIN",
+      "name": "kotlin",
+      "file_extension": "kt",
+      "compile_cmd": "kotlinc \"{input}\" -include-runtime -d \"{output}\".jar",
+      "run_cmd": "java -jar \"{output}\".jar",
+      "need_compile": true,
+      "enabled": false,
+      "dangerous_functions": [
+        "Runtime.getRuntime().exec(",
+        "ProcessBuilder"
+      ],
+      "dangerous_modules": [
+        "java.io",
+        "java.nio",
+        "java.net",
+        "java.lang.Process",
+        "java.lang.Runtime"
+      ]
+    },
+    {
+      "type": "RUBY",
+      "name": "ruby",
+      "file_extension": "rb",
+      "compile_cmd": "",
+      "run_cmd": "ruby \"{input}\"",
+      "need_compile": false,
+      "enabled": false,
+      "dangerous_functions": [
+        "eval(",
+        "exec(",
+        "system(",
+        "spawn("
+      ],
+      "dangerous_modules": [
+        "File",
+        "IO",
+        "Kernel",
+        "Process"
+      ]
+    },
+    {
+      "type": "PHP",
+      "name": "php",
+      "file_extension": "php",
+      "compile_cmd": "",
+      "run_cmd": "php \"{input}\"",
+      "need_compile": false,
+      "enabled": false,
+      "dangerous_functions": [
+        "eval(",
+        "exec(",
+        "shell_exec(",
+        "system(",
+        "passthru("
+      ],
+      "dangerous_modules": [
+        "shell_exec",
+        "exec",
+        "system",
+        "passthru",
+        "file_get_contents",
+        "file_put_contents"
+      ]
+    }
+  ]
+}
