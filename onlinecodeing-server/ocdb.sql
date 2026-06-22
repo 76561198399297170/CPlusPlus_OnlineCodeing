@@ -147,6 +147,9 @@ CREATE TABLE `user_group_status` (
 
 SELECT '数据库创建完成，所有表创建成功！' AS '执行结果';
 
+-- password: 123456    sha256: 8e4bb87e6fa3040477e5b8a9c69c98d0152b8c51e5a77a5a95267a9a790ea94d    salt: OStInz4eXFzd0zK5
+-- password: 123456    sha256: 3a6058f92b334e652ff63250ef6afd8c71d461ab4329554cc2a35e24b215361f    salt: hcl4gVQU8YnHoEU1
+-- password: 123123    sha256: 27f136a64a96bcb9cb9d119c0d6b808b80466c659aee1e0c77a92ef1e430377d    salt: vh7owoS5kKQNhUSK
 
 
 
